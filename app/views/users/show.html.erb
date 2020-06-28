@@ -1,0 +1,11 @@
+<div class="contents row">
+  <p><%= @nickname %>さんの投稿一覧</p>
+  <% @tweets.each do |tweet| %>
+    <div class="content_post">
+      <%=(tweet.text) %>
+    </div>
+  <% end %>
+  <div class="centereee">
+  <a class="list2" href="/">Return to the top page</a>
+</div>
+</div>

@@ -1,0 +1,290 @@
+* {
+   box-sizing: border-box;
+}
+
+@font-face{
+  font-family: 'ほのか明朝';
+  src: url('font_1_fonokamin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background-color: #e6e6e6;
+}
+
+header{
+  width:100%;
+  padding:30px 4% 30px ;
+  margin:0px 0px 0px 0px;
+  background-color:#AFEEEE;
+  height:30px;
+  display:flex; 
+  align-items:center;
+}
+
+h1{
+  margin:0;
+  padding:0;
+  font-size:20px;
+  font-family:'Noto Sans JP';
+}
+
+.list{
+  display: inline-block;
+  padding : 0.5em 1em;
+  background: red;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  text-decoration:none;
+  color: yellow;
+  font-size:auto;
+}
+
+.list:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.list{
+  font-size:14px;
+}
+
+nav{
+  margin:0 0 0 auto;
+}
+
+.container1{
+  background-color:#FFF8DC;
+  overflow:hidden;
+  min-height:86vh;
+}
+
+.container{
+  padding:0px 0px 0px 0px;
+  margin:0px 15vw 0px 15vw;
+}
+
+.content_post{
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #FFF;
+  background: #6eb7ff;
+  border-bottom: solid 6px #3f87ce;
+  box-shadow: 0 3px 6px rgva(0,0,0,0.25);
+  border-radius: 9px;
+}
+
+.content_post p {
+  margin: 0;
+  padding: 0;
+}
+
+.name{
+  display:flex;
+  justify-content:flex-end;
+}
+
+footer{
+  width:100%;
+  height:50px;
+  background-color:#AFEEEE;
+  position:relative;
+  display:flex; 
+  justify-content:center;
+}
+
+.h3-1{
+  color:red;
+  padding-left:44%;
+  padding-right:25%;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact-form input[type=text], .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 2px solid #0bff78;
+  border-radius: 10px;
+  color: #333;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type=submit] {
+ display: inline-block;
+  padding : 0.5em 1em;
+  background: red;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  text-decoration:none;
+  color: yellow;
+  font-size:auto;
+  cursor:pointer;
+  margin-left:40%;
+  margin-right:50%;
+}
+
+.contact-form input[type=submit]:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.h3{
+  color:blue;
+  text-align:center;
+}
+
+.success2{
+  text-align:center;
+  margin:100px 0px 0px 0px ;
+}
+
+.btn{
+  display: inline-block;
+  padding : 0.5em 1em;
+  background: red;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  text-decoration:none;
+  color: yellow;
+  font-size:auto;  
+}
+
+.btn:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.h2 {
+  text-align:center;
+}
+
+
+.field{
+  text-align:center;
+  color:red;
+  margin:30px 0px 0px 0px;
+}
+
+.field2{
+  width:30%;
+  padding:10px;
+  border-radius:10px;
+}
+
+.field2:focus{
+  box-shadow: 0 0 7px #3498db;
+  border:1px solid #3498db;
+}
+
+.actions{
+  text-align:center;
+  margin-top:75px;
+}
+
+.botton {
+  display: inline-block;
+  padding : 0.5em 1em;
+  background: red;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  text-decoration:none;
+  color: yellow;
+  font-size:auto;
+}
+
+.botton:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.h21{
+  text-align:center;
+}
+
+.pagination{
+  text-align:center;
+  letter-spacing: 3.5px;
+}
+
+.name{
+  letter-spacing: 1px;
+}
+
+:any-link{
+  text-decoration:none;
+  color:yellow;
+}
+
+.list2{
+  display: inline-block;
+  padding : 0.5em 1em;
+  background: red;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  text-decoration:none;
+  color: yellow;
+  font-size:auto;  
+  text-align:center;
+}
+
+.list2:active{
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  border-bottom: none;
+}
+
+.centereee{
+  text-align:center;
+  margin-top:20%;
+}
+
+.hiroki{
+  margin-top:10%;
+}
+
+.more{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.botan1{
+  margin-left:4px;
+}
+
+.botan2{
+  margin-right:4px;
+}
+
+.h3-2{
+  color:red;
+  text-align:center;
+}
+
+.hiroki39{
+    margin-top:10%;
+  text-align:center;
+  color:blue;
+
+}
+
+.comments1{
+  color:red;
+}

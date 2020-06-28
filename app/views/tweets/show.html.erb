@@ -1,0 +1,42 @@
+<div class="contents row">
+  <div class="content_post" >
+    
+     <span class="name">
+     
+        <span>投稿者</span><%= @tweet.user.nickname %>
+ 
+    </span>
+    
+    
+    <%= simple_format(@tweet.text) %>
+   
+   
+   
+  </div>
+  
+   <h4>＜コメント一覧＞</h4>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <p>
+            <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}",class:"comments1"%>：</strong>
+            <%= comment.text %>
+          </p>
+        <% end %>
+      <% end %>
+  
+  <div class="container">
+    <% if current_user %>
+     <%= form_tag("/tweets/#{@tweet.id}/comments",method: :post) do %>
+     <div class="contact-form">
+      <textarea name="text" placeholder="comments" rows="2" cols="30"></textarea>
+      <input type="submit" value="SENT">
+     </div>
+     <% end %>
+    <% end %>
+  </div>
+  
+  <div class="centereee">
+  <a class="list2" href="/">Return to the top page</a>
+</div>
+  
+</div>
